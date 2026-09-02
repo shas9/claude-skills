@@ -21,6 +21,35 @@ Turns a short command into a single, optimal, ready-to-use prompt for Claude —
 ### [prompt-executor](prompt-executor/SKILL.md)
 Finds the most recently generated prompt in the conversation (from a `prompt-architect` run) and carries it out in full, without editing or reinterpreting it. Triggered only by messages starting with `PE:` or the `/claude-prompt-execute` command.
 
+## Installation
+
+Claude Code loads personal skills from a `skills` directory inside `.claude` in your home folder. Clone this repo directly into that location — the folder must be named `skills`, so if you clone with the default repo name (`claude-skills`), rename it after cloning.
+
+**macOS / Linux**
+
+```bash
+git clone https://github.com/shas9/claude-skills.git ~/.claude/skills
+```
+
+Full path example: `/Users/{userName}/.claude/skills` (macOS) or `/home/{userName}/.claude/skills` (Linux).
+
+**Windows (PowerShell)**
+
+```powershell
+git clone https://github.com/shas9/claude-skills.git $env:USERPROFILE\.claude\skills
+```
+
+Full path example: `C:\Users\{userName}\.claude\skills`.
+
+**If `~/.claude` already exists** with other content, clone elsewhere and copy just the skill folders in, or clone into a temp directory and merge:
+
+```bash
+git clone https://github.com/shas9/claude-skills.git /tmp/claude-skills
+cp -r /tmp/claude-skills/* ~/.claude/skills/
+```
+
+Restart Claude Code (or start a new session) after adding skills so it picks them up.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
