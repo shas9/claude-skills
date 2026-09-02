@@ -2,6 +2,8 @@
 
 Custom skills for [Claude Code](https://claude.com/claude-code).
 
+Prepared and organized by [Shahwat Hasnaine](https://www.linkedin.com/in/shas9/) — hasnaine@venture144.com
+
 ## Skills
 
 ### [chunked-commit-review](chunked-commit-review/SKILL.md)
@@ -18,3 +20,7 @@ Turns a short command into a single, optimal, ready-to-use prompt for Claude —
 
 ### [prompt-executor](prompt-executor/SKILL.md)
 Finds the most recently generated prompt in the conversation (from a `prompt-architect` run) and carries it out in full, without editing or reinterpreting it. Triggered only by messages starting with `PE:` or the `/claude-prompt-execute` command.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
